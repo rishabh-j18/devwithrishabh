@@ -1,25 +1,25 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+const bootMessages = [
+  { text: "BIOS v2.6.0 - ANALOG GLITCH SYSTEMS", delay: 0 },
+  { text: "Initializing memory... OK", delay: 200 },
+  { text: "Loading kernel modules...", delay: 400 },
+  { text: ">> dev_portfolio.sys loaded", delay: 600 },
+  { text: ">> creativity_engine.dll loaded", delay: 800 },
+  { text: ">> caffeine_processor.exe loaded", delay: 1000 },
+  { text: "Mounting file systems... OK", delay: 1200 },
+  { text: "Starting network services...", delay: 1400 },
+  { text: ">> Connection established: INTERNET", delay: 1600 },
+  { text: "Loading user profile: RISHABH.JAISWAL", delay: 1800 },
+  { text: "Initializing GUI...", delay: 2000 },
+  { text: "", delay: 2200 },
+  { text: "SYSTEM READY.", delay: 2400 },
+];
+
 const BootSequence = ({ onComplete }) => {
   const [lines, setLines] = useState([]);
   const [progress, setProgress] = useState(0);
-
-  const bootMessages = [
-    { text: "BIOS v2.6.0 - ANALOG GLITCH SYSTEMS", delay: 0 },
-    { text: "Initializing memory... OK", delay: 200 },
-    { text: "Loading kernel modules...", delay: 400 },
-    { text: ">> dev_portfolio.sys loaded", delay: 600 },
-    { text: ">> creativity_engine.dll loaded", delay: 800 },
-    { text: ">> caffeine_processor.exe loaded", delay: 1000 },
-    { text: "Mounting file systems... OK", delay: 1200 },
-    { text: "Starting network services...", delay: 1400 },
-    { text: ">> Connection established: INTERNET", delay: 1600 },
-    { text: "Loading user profile: RISHABH.JAISWAL", delay: 1800 },
-    { text: "Initializing GUI...", delay: 2000 },
-    { text: "", delay: 2200 },
-    { text: "SYSTEM READY.", delay: 2400 },
-  ];
 
   useEffect(() => {
     bootMessages.forEach((msg, index) => {
@@ -34,7 +34,7 @@ const BootSequence = ({ onComplete }) => {
     }, 3000);
 
     return () => clearTimeout(completeTimer);
-  }, []);
+  }, [onComplete]);
 
   return (
     <motion.div

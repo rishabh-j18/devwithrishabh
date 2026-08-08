@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 // Scroll to top on every route change
@@ -31,6 +31,10 @@ import content from "@/data/content.json";
 function App() {
   const [isBooting, setIsBooting] = useState(true);
 
+  const handleBootComplete = useCallback(() => {
+    setIsBooting(false);
+  }, []);
+
   useEffect(() => {
     // Boot sequence timer
     const bootTimer = setTimeout(() => {
@@ -50,7 +54,7 @@ function App() {
         <ScrollToTop />
         <AnimatePresence mode="wait">
           {isBooting ? (
-            <BootSequence key="boot" onComplete={() => setIsBooting(false)} />
+            <BootSequence key="boot" onComplete={handleBootComplete} />
           ) : (
             <motion.div
               key="main"
