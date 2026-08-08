@@ -1,0 +1,358 @@
+@import '@fontsource/press-start-2p';
+@import '@fontsource/fira-code/400.css';
+@import '@fontsource/fira-code/500.css';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/space-grotesk';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Vintage Colors */
+  --vintage-peach: #E8B4A0;
+  --vintage-teal: #5C8A8A;
+  --vintage-cream: #F4F1E8;
+  --vintage-brown: #8B6F47;
+  --vintage-beige: #D4C5B0;
+  --vintage-rust: #B85C38;
+  --vintage-olive: #7A9D54;
+  --vintage-charcoal: #3E3E3E;
+
+  /* Neon Colors */
+  --neon-magenta: #FF006E;
+  --neon-cyan: #00F5FF;
+  --neon-yellow: #FFBE0B;
+  --neon-green: #39FF14;
+  --neon-orange: #FF6600;
+  --neon-purple: #BF00FF;
+  --neon-pink: #FF10F0;
+  --neon-blue: #0096FF;
+
+  /* Glow Effects */
+  --glow-magenta: rgba(255, 0, 110, 0.6);
+  --glow-cyan: rgba(0, 245, 255, 0.6);
+  --glow-yellow: rgba(255, 190, 11, 0.6);
+  --glow-green: rgba(57, 255, 20, 0.6);
+
+  /* Grays */
+  --gray-darkest: #0A0A0A;
+  --gray-darker: #1A1A1A;
+  --gray-dark: #2D2D2D;
+  --gray-medium: #4A4A4A;
+  --gray-light: #757575;
+
+  /* Semantic - Dark Mode Only */
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #1A1A1A;
+  --bg-tertiary: #2D2D2D;
+  --text-primary: #F4F1E8;
+  --text-secondary: #ABABAB;
+  --text-muted: #757575;
+  --border-primary: #3E3E3E;
+
+  /* Typography */
+  --font-retro: 'Press Start 2P', 'Courier New', monospace;
+  --font-body: 'Inter Variable', 'Segoe UI', system-ui, sans-serif;
+  --font-code: 'Fira Code', 'Monaco', monospace;
+  --font-accent: 'Space Grotesk Variable', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vintage-teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan);
+}
+
+/* Selection */
+::selection {
+  background: var(--neon-cyan);
+  color: var(--gray-darkest);
+}
+
+/* Glitch Text Animation */
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); }
+  10% { transform: skew(-2deg); }
+  20% { transform: skew(2deg); }
+  30% { transform: skew(0deg); }
+  100% { transform: skew(0deg); }
+}
+
+@keyframes glitch-anim-1 {
+  0%, 100% { clip-path: inset(0 0 0 0); opacity: 0; }
+  5% { clip-path: inset(20% 0 60% 0); opacity: 0.8; }
+  10% { clip-path: inset(70% 0 10% 0); opacity: 0.8; }
+  15% { clip-path: inset(40% 0 40% 0); opacity: 0.8; }
+  20% { clip-path: inset(0 0 0 0); opacity: 0; }
+}
+
+@keyframes glitch-anim-2 {
+  0%, 100% { clip-path: inset(0 0 0 0); opacity: 0; }
+  7% { clip-path: inset(60% 0 20% 0); opacity: 0.8; }
+  14% { clip-path: inset(10% 0 70% 0); opacity: 0.8; }
+  21% { clip-path: inset(50% 0 30% 0); opacity: 0.8; }
+  28% { clip-path: inset(0 0 0 0); opacity: 0; }
+}
+
+/* CRT Scanline Effect */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+/* Neon Glow Pulse */
+@keyframes glow-pulse {
+  0%, 100% { filter: drop-shadow(0 0 20px var(--glow-cyan)); }
+  50% { filter: drop-shadow(0 0 40px var(--glow-cyan)) drop-shadow(0 0 60px var(--glow-cyan)); }
+}
+
+/* Flicker Effect */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  3% { opacity: 0.4; }
+  6% { opacity: 1; }
+  7% { opacity: 0.4; }
+  8% { opacity: 1; }
+  9% { opacity: 0.4; }
+  10% { opacity: 1; }
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--neon-cyan); }
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Rotate Reel */
+@keyframes spin-reel {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Progress Shine */
+@keyframes progress-shine {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* Boot Sequence */
+@keyframes boot-text {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Utility Classes */
+.font-retro {
+  font-family: var(--font-retro);
+}
+
+.font-code {
+  font-family: var(--font-code);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.text-neon-cyan {
+  color: var(--neon-cyan);
+}
+
+.text-neon-magenta {
+  color: var(--neon-magenta);
+}
+
+.text-neon-green {
+  color: var(--neon-green);
+}
+
+.text-neon-yellow {
+  color: var(--neon-yellow);
+}
+
+.glow-cyan {
+  text-shadow: 0 0 10px var(--glow-cyan), 0 0 20px var(--glow-cyan), 0 0 40px var(--glow-cyan);
+}
+
+.glow-magenta {
+  text-shadow: 0 0 10px var(--glow-magenta), 0 0 20px var(--glow-magenta), 0 0 40px var(--glow-magenta);
+}
+
+.bg-vintage-cream {
+  background-color: var(--vintage-cream);
+}
+
+.bg-vintage-peach {
+  background-color: var(--vintage-peach);
+}
+
+.border-vintage {
+  border-color: var(--vintage-brown);
+}
+
+/* CRT Frame Effect */
+.crt-frame {
+  position: relative;
+  background: linear-gradient(135deg, var(--gray-darker) 0%, var(--gray-darkest) 100%);
+  border: 12px solid var(--vintage-brown);
+  border-radius: 20px;
+  box-shadow:
+    inset 0 0 100px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(0, 245, 255, 0.2);
+  overflow: hidden;
+}
+
+.crt-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.1) 2px,
+    rgba(0, 0, 0, 0.1) 4px
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+.crt-frame::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 245, 255, 0.05),
+    transparent
+  );
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+  z-index: 11;
+}
+
+/* VHS Card Effect */
+.vhs-card {
+  background: linear-gradient(135deg, var(--vintage-peach) 0%, var(--vintage-beige) 100%);
+  border: 4px solid var(--vintage-brown);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 0 30px rgba(0, 0, 0, 0.1),
+    4px 4px 0 var(--vintage-rust),
+    8px 8px 0 var(--vintage-charcoal);
+  position: relative;
+  overflow: hidden;
+}
+
+.vhs-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Terminal Style */
+.terminal {
+  background: var(--gray-darkest);
+  border: 2px solid var(--gray-dark);
+  border-radius: 8px;
+  font-family: var(--font-code);
+}
+
+.terminal-header {
+  background: var(--gray-darker);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--gray-dark);
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-dot.red { background: #FF5F57; }
+.terminal-dot.yellow { background: #FFBD2E; }
+.terminal-dot.green { background: #28CA42; }
+
+/* Noise Overlay */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

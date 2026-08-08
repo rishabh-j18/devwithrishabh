@@ -1,0 +1,342 @@
+{
+  "personal": {
+    "name": "Rishabh Jaiswal",
+    "email": "contact@devwithrishabh.in",
+    "phone": "+917860609470",
+    "domain": "devwithrishabh.in",
+    "tagline": "Crafting Digital Experiences",
+    "bio": "A passionate technologist who transforms complex problems into elegant solutions. Specializing in building scalable applications, cloud infrastructure, and seamless user experiences across web and mobile platforms.",
+    "roles": [
+      "Full Stack Developer",
+      "Software Engineer",
+      "App Developer",
+      "DevOps Engineer"
+    ],
+    "yearsOfExperience": "5+",
+    "location": "India",
+    "availability": "Available for freelance & full-time",
+    "availabilityIdle": "Currently Idle for freelancing",
+    "availableForFreelance": false
+  },
+  "social": {
+    "github": "https://github.com/rishabh-j18",
+    "linkedin": "https://www.linkedin.com/in/devwithrishabh",
+    "instagram": "https://instagram.com/devwithrishabh.in"
+  },
+  "skills": {
+    "frontend": [
+      { "name": "React.js", "level": 95, "icon": "FaReact", "years": "4+" },
+      { "name": "Next.js", "level": 90, "icon": "SiNextdotjs", "years": "3+" },
+      { "name": "TypeScript", "level": 88, "icon": "SiTypescript", "years": "3+" },
+      { "name": "Tailwind CSS", "level": 92, "icon": "SiTailwindcss", "years": "3+" },
+      { "name": "Vue.js", "level": 75, "icon": "FaVuejs", "years": "2+" },
+      { "name": "HTML5/CSS3", "level": 98, "icon": "FaHtml5", "years": "5+" }
+    ],
+    "backend": [
+      { "name": "Node.js", "level": 93, "icon": "FaNodeJs", "years": "4+" },
+      { "name": "Express.js", "level": 90, "icon": "SiExpress", "years": "4+" },
+      { "name": "Python", "level": 85, "icon": "FaPython", "years": "3+" },
+      { "name": "FastAPI", "level": 82, "icon": "SiFastapi", "years": "2+" },
+      { "name": "GraphQL", "level": 78, "icon": "SiGraphql", "years": "2+" }
+    ],
+    "database": [
+      { "name": "MongoDB", "level": 90, "icon": "SiMongodb", "years": "4+" },
+      { "name": "PostgreSQL", "level": 85, "icon": "SiPostgresql", "years": "3+" },
+      { "name": "Redis", "level": 80, "icon": "SiRedis", "years": "2+" },
+      { "name": "MySQL", "level": 82, "icon": "SiMysql", "years": "3+" }
+    ],
+    "devops": [
+      { "name": "Docker", "level": 88, "icon": "FaDocker", "years": "3+" },
+      { "name": "Kubernetes", "level": 75, "icon": "SiKubernetes", "years": "2+" },
+      { "name": "AWS", "level": 85, "icon": "FaAws", "years": "3+" },
+      { "name": "CI/CD", "level": 88, "icon": "SiGithubactions", "years": "3+" },
+      { "name": "Terraform", "level": 72, "icon": "SiTerraform", "years": "2+" }
+    ],
+    "mobile": [
+      { "name": "React Native", "level": 85, "icon": "FaReact", "years": "3+" },
+      { "name": "Flutter", "level": 70, "icon": "SiFlutter", "years": "1+" }
+    ],
+    "tools": [
+      { "name": "Git", "level": 95, "icon": "FaGit", "years": "5+" },
+      { "name": "Linux", "level": 88, "icon": "FaLinux", "years": "4+" },
+      { "name": "VS Code", "level": 95, "icon": "SiVisualstudiocode", "years": "5+" },
+      { "name": "Figma", "level": 75, "icon": "FaFigma", "years": "2+" }
+    ]
+  },
+  "projects": [
+    {
+      "id": "tracesafe-v2",
+      "title": "TraceSafe v2.0",
+      "tagline": "Missing Person Reporting Platform",
+      "description": "A civic-tech platform enabling citizens, government officials, and administrators to coordinate missing person reports and findings. Built with role-based access, real-time dashboards, and secure data pipelines.",
+      "longDescription": "TraceSafe v2.0 features three distinct user roles — normal citizens who report and flag findings, government officials who coordinate case responses, and administrators who oversee the entire ecosystem. Each role gets a custom dashboard tailored to their workflow. This is the successor to TraceSafe v1.0 which was Web3-integrated.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express.js", "JWT", "Socket.io"],
+      "type": "webapp",
+      "category": "Web App",
+      "featured": true,
+      "status": "completed",
+      "year": "2024",
+      "links": {
+        "live": "#",
+        "github": "#"
+      },
+      "screenshots": [],
+      "color": "cyan",
+      "isSelf": false,
+      "clientInfo": null,
+      "evolvedFrom": "tracesafe-v1",
+      "evolvedInto": null
+    },
+    {
+      "id": "this-portfolio",
+      "title": "This Portfolio",
+      "tagline": "You're Looking At It!",
+      "description": "A vintage-glitch aesthetic developer portfolio blending retro VHS nostalgia with neon cyberpunk energy. Built with React, featuring a custom design system, boot sequence animation, and glitch effects.",
+      "longDescription": "The very site you're browsing right now. Designed from scratch with a custom retro-futuristic design language — Press Start 2P typography, neon glow effects, CRT scanlines, VHS tracking noise, and Framer Motion animations. Meta enough to be listed as its own project.",
+      "technologies": ["React", "Tailwind CSS", "Framer Motion", "Lucide Icons", "CRACO"],
+      "type": "webapp",
+      "category": "Web App",
+      "featured": false,
+      "status": "completed",
+      "year": "2026",
+      "links": {
+        "live": "#",
+        "github": "https://github.com/rishabh-j18"
+      },
+      "screenshots": [],
+      "color": "magenta",
+      "isSelf": true,
+      "clientInfo": null,
+      "evolvedFrom": null,
+      "evolvedInto": null
+    },
+    {
+      "id": "restaurant-billing",
+      "title": "RestoBill",
+      "tagline": "Smart Restaurant Billing System",
+      "description": "A Python-powered desktop billing system for restaurants. Handles order marking, real-time stock tracking, bill printing & emailing, manager/cashier role logins, MRP/tax management, and audit log exports compatible with PowerBI.",
+      "longDescription": "RestoBill streamlines restaurant operations with a dual-role system — cashiers mark orders and generate bills (print or email), while managers restock inventory, update pricing and tax rates, and export detailed audit logs. The real-time stock engine automatically deducts items as they're ordered and flags low-stock warnings.",
+      "technologies": ["Python", "Tkinter", "SQLite", "SMTP", "ReportLab"],
+      "type": "native",
+      "category": "Native App",
+      "featured": true,
+      "status": "completed",
+      "year": "2023",
+      "links": {
+        "live": null,
+        "github": "#"
+      },
+      "screenshots": [],
+      "color": "green",
+      "isSelf": false,
+      "clientInfo": null,
+      "evolvedFrom": null,
+      "evolvedInto": null
+    },
+    {
+      "id": "client-school",
+      "title": "School Website",
+      "tagline": "Academic Institution Web Presence",
+      "description": "A professional website developed for a school client. Features a clean academic aesthetic with admissions info, faculty profiles, events calendar, notice board, and a gallery — all content-managed and mobile-responsive.",
+      "longDescription": "Built as a freelance project for a school institution. Delivered a fast, accessible, and SEO-friendly web presence that gives parents, students, and staff easy access to information. Mobile-first design with responsive layouts across all screen sizes.",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "PHP"],
+      "type": "client",
+      "category": "Client Work",
+      "featured": false,
+      "status": "completed",
+      "year": "2023",
+      "links": {
+        "live": "#",
+        "github": null
+      },
+      "screenshots": [],
+      "color": "yellow",
+      "isSelf": false,
+      "clientInfo": {
+        "industry": "Education",
+        "type": "Institution Website"
+      },
+      "evolvedFrom": null,
+      "evolvedInto": null
+    },
+    {
+      "id": "client-travel",
+      "title": "Travel Tour Website",
+      "tagline": "Tourism & Travel Booking Platform",
+      "description": "A travel and tourism website built for a tour operator client. Showcases tour packages, destinations, itineraries, and pricing with an inquiry/booking form and a visual gallery of travel destinations.",
+      "longDescription": "Developed as a freelance project, this site gives the tour operator a professional digital presence to attract and convert travelers. Features destination browsing, package listings with itineraries, contact and inquiry forms, and a rich image gallery. Optimized for local SEO to help the client get discovered.",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "PHP"],
+      "type": "client",
+      "category": "Client Work",
+      "featured": false,
+      "status": "completed",
+      "year": "2023",
+      "links": {
+        "live": "#",
+        "github": null
+      },
+      "screenshots": [],
+      "color": "yellow",
+      "isSelf": false,
+      "clientInfo": {
+        "industry": "Tourism & Travel",
+        "type": "Business Website"
+      },
+      "evolvedFrom": null,
+      "evolvedInto": null
+    },
+    {
+      "id": "tracesafe-v1",
+      "title": "TraceSafe v1.0",
+      "tagline": "Web3-Integrated Missing Person Platform",
+      "description": "The original TraceSafe — a blockchain-integrated platform for missing person reporting using decentralized identity verification. Built with Web3 smart contracts to ensure tamper-proof case records.",
+      "longDescription": "TraceSafe v1.0 was an ambitious experiment integrating Web3 technology into civic-tech. Smart contracts on Ethereum handled immutable case records and decentralized identity. The platform proved the concept but faced scalability and maintenance challenges that led to the full v2.0 rebuild.",
+      "technologies": ["React", "Solidity", "Ethereum", "Web3.js", "Node.js", "IPFS"],
+      "type": "archive",
+      "category": "Archived",
+      "featured": false,
+      "status": "archived",
+      "year": "2023",
+      "links": {
+        "live": null,
+        "github": null
+      },
+      "screenshots": [],
+      "color": "amber",
+      "isSelf": false,
+      "clientInfo": null,
+      "evolvedFrom": null,
+      "evolvedInto": "tracesafe-v2"
+    },
+    {
+      "id": "freelanceit",
+      "title": "FreelanceIT",
+      "tagline": "Web3 Freelancer-Recruiter Marketplace",
+      "description": "A decentralized freelancing marketplace where freelancers and recruiters collaborate on projects with trustless escrow-based payments. Disputes auto-escalate to admin intervention, ensuring fairness for both parties.",
+      "longDescription": "FreelanceIT used Ethereum smart contracts to hold payments in escrow, only releasing funds upon project milestone completion and mutual agreement. A built-in dispute resolution system auto-escalated unresolved conflicts to a trusted admin panel. The platform aimed to eliminate middlemen and payment fraud from freelancing.",
+      "technologies": ["React", "Solidity", "Ethereum", "Web3.js", "Node.js", "MongoDB"],
+      "type": "archive",
+      "category": "Archived",
+      "featured": false,
+      "status": "archived",
+      "year": "2022",
+      "links": {
+        "live": null,
+        "github": null
+      },
+      "screenshots": [],
+      "color": "amber",
+      "isSelf": false,
+      "clientInfo": null,
+      "evolvedFrom": null,
+      "evolvedInto": null
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "TCS (Tata Consultancy Services)",
+      "role": "QA Engineer & Functional Tester",
+      "duration": "Apr 2026 - Present",
+      "type": "work",
+      "description": "Working as a QA Engineer and Functional Tester, ensuring software quality through systematic testing, defect tracking, and functional validation across enterprise-scale applications.",
+      "highlights": [
+        "Executing functional and regression test cases for enterprise applications",
+        "Collaborating with development teams to identify and resolve defects",
+        "Applying real-world QA processes in a professional environment"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "company": "Freelancing & Real World Projects",
+      "role": "Independent Developer",
+      "duration": "2025 - Mar 2026",
+      "type": "work",
+      "description": "Worked on client projects and real-world applications independently, building websites for businesses and deepening practical experience across the full development lifecycle.",
+      "highlights": [
+        "Delivered client projects including a school website and a travel tour platform",
+        "Managed end-to-end project delivery from requirements to deployment",
+        "Gained hands-on experience with real business requirements and client communication"
+      ]
+    },
+    {
+      "id": "exp-3",
+      "company": "VIT Vellore",
+      "role": "Master of Computer Applications (MCA)",
+      "duration": "2023 - 2025",
+      "type": "education",
+      "description": "Pursued MCA at VIT Vellore, deepening expertise in software engineering, cloud computing, and full-stack development. Built TraceSafe v2.0, RestoBill, FreelanceIT, and this portfolio during this period.",
+      "highlights": [
+        "Specialized in full-stack and cloud-native application development",
+        "Built multiple real-world projects including TraceSafe v2.0 and RestoBill",
+        "Explored Web3 and blockchain through TraceSafe v1.0 and FreelanceIT"
+      ]
+    },
+    {
+      "id": "exp-4",
+      "company": "Dr. RML Avadh University",
+      "role": "Bachelor of Science (B.Sc)",
+      "duration": "2020 - 2023",
+      "type": "education",
+      "description": "Completed B.Sc from Dr. Ram Manohar Lohia Avadh University, building a strong foundation in science and mathematics that later supported a transition into software development.",
+      "highlights": [
+        "Built foundational analytical and problem-solving skills",
+        "Began self-learning programming and web technologies",
+        "Transitioned into computer science and software development"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "Sarah Chen",
+      "role": "CTO, TechStartup Inc.",
+      "content": "Rishabh delivered exceptional work on our platform. His technical expertise and attention to detail transformed our product vision into reality.",
+      "avatar": "SC"
+    },
+    {
+      "id": "test-2",
+      "name": "Michael Roberts",
+      "role": "Product Manager, CloudScale",
+      "content": "Working with Rishabh was a game-changer. He not only built what we asked for but suggested improvements that significantly enhanced user experience.",
+      "avatar": "MR"
+    },
+    {
+      "id": "test-3",
+      "name": "Priya Sharma",
+      "role": "Founder, DataFlow",
+      "content": "Rishabh's DevOps expertise helped us scale from 100 to 100,000 users seamlessly. His infrastructure design is rock solid.",
+      "avatar": "PS"
+    }
+  ],
+  "services": [
+    {
+      "id": "svc-1",
+      "title": "Full Stack Development",
+      "description": "End-to-end web application development using modern frameworks and best practices.",
+      "icon": "FaCode"
+    },
+    {
+      "id": "svc-2",
+      "title": "Mobile App Development",
+      "description": "Cross-platform mobile applications for iOS and Android using React Native.",
+      "icon": "FaMobile"
+    },
+    {
+      "id": "svc-3",
+      "title": "DevOps & Cloud",
+      "description": "Cloud infrastructure setup, CI/CD pipelines, and deployment automation.",
+      "icon": "FaCloud"
+    },
+    {
+      "id": "svc-4",
+      "title": "Technical Consulting",
+      "description": "Architecture reviews, technology recommendations, and team mentoring.",
+      "icon": "FaLightbulb"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 Rishabh Jaiswal. All rights reserved.",
+    "tagline": "Crafted with passion & caffeine ☕"
+  }
+}
